@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref, nextTick, onMounted, computed } from "vue";
+import { isValidSIN } from "./../utils/sin";
 
 const sin = ref(Array(9).fill("")); // Array used to store the SIN and for v-model input.
 const inputs = ref<HTMLInputElement[]>([]); // Array used to store the input elements.
@@ -42,8 +43,8 @@ const sinIsReady = computed(
     sin.value.length === 9 && sin.value.every((char) => !isNaN(parseInt(char)))
 );
 
-// TODO: Implement valid check. Check if the SIN is valid. 
-const sinIsValid = computed(() => {return sin.value[0] % 2 === 0})
+// Check if the SIN is valid. 
+const sinIsValid = computed(() => isValidSIN(sin.value.join("")));
 
 onMounted(() => {
   nextTick(() => {
