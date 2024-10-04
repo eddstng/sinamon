@@ -43,7 +43,7 @@ const sinIsReady = computed(
     sin.value.length === 9 && sin.value.every((char) => !isNaN(parseInt(char)))
 );
 
-// Check if the SIN is valid. 
+// Check if the SIN is valid.
 const sinIsValid = computed(() => isValidSIN(sin.value.join("")));
 
 onMounted(() => {

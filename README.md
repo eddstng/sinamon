@@ -1,33 +1,41 @@
-# sinamon
+# Sinamon
 
-This template should help get you started developing with Vue 3 in Vite.
+A Social Insurance Number (SIN) validator built with TypeScript, Tailwind CSS, and DaisyUI, using the Luhn algorithm for validation with an interactive web interface.
 
-## Recommended IDE Setup
+![Logo](https://i.imgur.com/WYuegBP.png)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Prerequisite:
 
-## Type Support for `.vue` Imports in TS
+Please enter the following commands
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
+```
+$ npm install
 ```
 
-### Compile and Hot-Reload for Development
+## Running Tests
 
-```sh
-npm run dev
+To run the tests, enter the following commands
+
+Unit Test (Vitest):
+```bash
+$ npm run test:unit
 ```
 
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
+E2E/UI Test (Cypress):
+```bash
+$ npm run test:e2e
 ```
+
+## Running App
+
+To run the app, enter the following commands
+
+```bash
+$ npm install
+$ npm run dev
+```
+The app will run on http://localhost:5173/.
+
+## SIN Validation Details
+
+More details on SIN validation can be found [here](https://loanscanada.ca/money/what-is-a-social-insurance-number-sin/).
