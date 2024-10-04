@@ -1,9 +1,13 @@
 <script setup lang="ts">
+import Title from '../components/Title.vue'
+import Input from '../components/Input.vue'
+import Details from '../components/Details.vue'
 </script>
 
 <template>
   <main>
-    <h1 class="text-3xl font-bold underline mb-10">TailwindCSS!</h1>
-    <button class="btn btn-primary">Hello Daisy button</button>
+    <Title/>
+    <Details/>
+    <Input/>
   </main>
 </template>
